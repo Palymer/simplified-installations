@@ -1,4 +1,3 @@
-```sh
 #!/bin/sh
 
 set -eu
@@ -536,4 +535,3 @@ main() {
 }
 
 main
-```
