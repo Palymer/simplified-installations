@@ -80,14 +80,6 @@ else
   exit
 fi
 
-if [ "$1" != "-f" ] && [ "$1" != "--force" ]; then
-  printf "Setup Webmin repository? (y/N) "
-  read -r sslyn
-  if [ "$sslyn" != "y" ] && [ "$sslyn" != "Y" ]; then
-    exit
-  fi
-fi
-
 if [ ! -x "$download_wget" ]; then
   if [ -x "/usr/bin/curl" ]; then
     download="/usr/bin/curl -f -s -L -O"
